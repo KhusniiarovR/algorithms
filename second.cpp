@@ -7,7 +7,7 @@ void solve()
     int n, q;
     const int SET = 1, FIND = 2, DIV_7 = 3, HIGH_5 = 4;
     cin >> n;
-    vector<int> A;
+    vector<long long int> A;
     for (int i = 0; i < n; i++) {
         int number;
         cin >> number;
@@ -42,10 +42,11 @@ void solve()
                 cout << position+1 << " ";
             }
             else if (a == HIGH_5) {
-                cout << count_if(begin, end, [](const int& value)
+                auto ans = count_if(begin, end, [](const int& value)
                 {
                     return value % 10 >= 5;
                 });
+                cout << ans << " ";
             }
         }
     }

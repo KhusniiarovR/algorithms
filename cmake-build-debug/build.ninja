@@ -172,6 +172,72 @@ build p04.exe: CXX_EXECUTABLE_LINKER__p04_Debug CMakeFiles/p04.dir/test.cpp.obj
   TARGET_IMPLIB = libp04.dll.a
   TARGET_PDB = p04.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target tictactoe
+
+
+#############################################
+# Order-only phony target for tictactoe
+
+build cmake_object_order_depends_target_tictactoe: phony || .
+
+build CMakeFiles/tictactoe.dir/linar.cpp.obj: CXX_COMPILER__tictactoe_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/linar.cpp || cmake_object_order_depends_target_tictactoe
+  DEP_FILE = CMakeFiles\tictactoe.dir\linar.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tictactoe.dir
+  OBJECT_FILE_DIR = CMakeFiles\tictactoe.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tictactoe
+
+
+#############################################
+# Link the executable tictactoe.exe
+
+build tictactoe.exe: CXX_EXECUTABLE_LINKER__tictactoe_Debug CMakeFiles/tictactoe.dir/linar.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\tictactoe.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tictactoe.exe
+  TARGET_IMPLIB = libtictactoe.dll.a
+  TARGET_PDB = tictactoe.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tictactoe52
+
+
+#############################################
+# Order-only phony target for tictactoe52
+
+build cmake_object_order_depends_target_tictactoe52: phony || .
+
+build CMakeFiles/tictactoe52.dir/linarpro.cpp.obj: CXX_COMPILER__tictactoe52_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/linarpro.cpp || cmake_object_order_depends_target_tictactoe52
+  DEP_FILE = CMakeFiles\tictactoe52.dir\linarpro.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\tictactoe52.dir
+  OBJECT_FILE_DIR = CMakeFiles\tictactoe52.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tictactoe52
+
+
+#############################################
+# Link the executable tictactoe52.exe
+
+build tictactoe52.exe: CXX_EXECUTABLE_LINKER__tictactoe52_Debug CMakeFiles/tictactoe52.dir/linarpro.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\tictactoe52.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = tictactoe52.exe
+  TARGET_IMPLIB = libtictactoe52.dll.a
+  TARGET_PDB = tictactoe52.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -206,6 +272,10 @@ build p03: phony p03.exe
 
 build p04: phony p04.exe
 
+build tictactoe: phony tictactoe.exe
+
+build tictactoe52: phony tictactoe52.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -214,7 +284,7 @@ build p04: phony p04.exe
 #############################################
 # Folder: C:/Users/ramir/CLionProjects/algorithms/cmake-build-debug
 
-build all: phony p01.exe p02.exe p03.exe p04.exe
+build all: phony p01.exe p02.exe p03.exe p04.exe tictactoe.exe tictactoe52.exe
 
 # =============================================================================
 # Built-in targets
