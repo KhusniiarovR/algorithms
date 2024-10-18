@@ -106,6 +106,72 @@ build p02.exe: CXX_EXECUTABLE_LINKER__p02_Debug CMakeFiles/p02.dir/second.cpp.ob
   TARGET_IMPLIB = libp02.dll.a
   TARGET_PDB = p02.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target p03
+
+
+#############################################
+# Order-only phony target for p03
+
+build cmake_object_order_depends_target_p03: phony || .
+
+build CMakeFiles/p03.dir/third.cpp.obj: CXX_COMPILER__p03_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/third.cpp || cmake_object_order_depends_target_p03
+  DEP_FILE = CMakeFiles\p03.dir\third.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\p03.dir
+  OBJECT_FILE_DIR = CMakeFiles\p03.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p03
+
+
+#############################################
+# Link the executable p03.exe
+
+build p03.exe: CXX_EXECUTABLE_LINKER__p03_Debug CMakeFiles/p03.dir/third.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\p03.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = p03.exe
+  TARGET_IMPLIB = libp03.dll.a
+  TARGET_PDB = p03.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target p04
+
+
+#############################################
+# Order-only phony target for p04
+
+build cmake_object_order_depends_target_p04: phony || .
+
+build CMakeFiles/p04.dir/test.cpp.obj: CXX_COMPILER__p04_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/test.cpp || cmake_object_order_depends_target_p04
+  DEP_FILE = CMakeFiles\p04.dir\test.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\p04.dir
+  OBJECT_FILE_DIR = CMakeFiles\p04.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target p04
+
+
+#############################################
+# Link the executable p04.exe
+
+build p04.exe: CXX_EXECUTABLE_LINKER__p04_Debug CMakeFiles/p04.dir/test.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\p04.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = p04.exe
+  TARGET_IMPLIB = libp04.dll.a
+  TARGET_PDB = p04.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -136,6 +202,10 @@ build p01: phony p01.exe
 
 build p02: phony p02.exe
 
+build p03: phony p03.exe
+
+build p04: phony p04.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -144,7 +214,7 @@ build p02: phony p02.exe
 #############################################
 # Folder: C:/Users/ramir/CLionProjects/algorithms/cmake-build-debug
 
-build all: phony p01.exe p02.exe
+build all: phony p01.exe p02.exe p03.exe p04.exe
 
 # =============================================================================
 # Built-in targets
