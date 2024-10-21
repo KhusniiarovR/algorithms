@@ -238,6 +238,105 @@ build tictactoe52.exe: CXX_EXECUTABLE_LINKER__tictactoe52_Debug CMakeFiles/ticta
   TARGET_IMPLIB = libtictactoe52.dll.a
   TARGET_PDB = tictactoe52.exe.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target vector1
+
+
+#############################################
+# Order-only phony target for vector1
+
+build cmake_object_order_depends_target_vector1: phony || .
+
+build CMakeFiles/vector1.dir/vectors_1.cpp.obj: CXX_COMPILER__vector1_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/vectors_1.cpp || cmake_object_order_depends_target_vector1
+  DEP_FILE = CMakeFiles\vector1.dir\vectors_1.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\vector1.dir
+  OBJECT_FILE_DIR = CMakeFiles\vector1.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vector1
+
+
+#############################################
+# Link the executable vector1.exe
+
+build vector1.exe: CXX_EXECUTABLE_LINKER__vector1_Debug CMakeFiles/vector1.dir/vectors_1.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\vector1.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = vector1.exe
+  TARGET_IMPLIB = libvector1.dll.a
+  TARGET_PDB = vector1.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target vector2
+
+
+#############################################
+# Order-only phony target for vector2
+
+build cmake_object_order_depends_target_vector2: phony || .
+
+build CMakeFiles/vector2.dir/vectors_2.cpp.obj: CXX_COMPILER__vector2_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/vectors_2.cpp || cmake_object_order_depends_target_vector2
+  DEP_FILE = CMakeFiles\vector2.dir\vectors_2.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\vector2.dir
+  OBJECT_FILE_DIR = CMakeFiles\vector2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vector2
+
+
+#############################################
+# Link the executable vector2.exe
+
+build vector2.exe: CXX_EXECUTABLE_LINKER__vector2_Debug CMakeFiles/vector2.dir/vectors_2.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\vector2.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = vector2.exe
+  TARGET_IMPLIB = libvector2.dll.a
+  TARGET_PDB = vector2.exe.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target vector3
+
+
+#############################################
+# Order-only phony target for vector3
+
+build cmake_object_order_depends_target_vector3: phony || .
+
+build CMakeFiles/vector3.dir/vectors_3.cpp.obj: CXX_COMPILER__vector3_unscanned_Debug C$:/Users/ramir/CLionProjects/algorithms/vectors_3.cpp || cmake_object_order_depends_target_vector3
+  DEP_FILE = CMakeFiles\vector3.dir\vectors_3.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\vector3.dir
+  OBJECT_FILE_DIR = CMakeFiles\vector3.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vector3
+
+
+#############################################
+# Link the executable vector3.exe
+
+build vector3.exe: CXX_EXECUTABLE_LINKER__vector3_Debug CMakeFiles/vector3.dir/vectors_3.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\vector3.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = vector3.exe
+  TARGET_IMPLIB = libvector3.dll.a
+  TARGET_PDB = vector3.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -276,6 +375,12 @@ build tictactoe: phony tictactoe.exe
 
 build tictactoe52: phony tictactoe52.exe
 
+build vector1: phony vector1.exe
+
+build vector2: phony vector2.exe
+
+build vector3: phony vector3.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -284,7 +389,7 @@ build tictactoe52: phony tictactoe52.exe
 #############################################
 # Folder: C:/Users/ramir/CLionProjects/algorithms/cmake-build-debug
 
-build all: phony p01.exe p02.exe p03.exe p04.exe tictactoe.exe tictactoe52.exe
+build all: phony p01.exe p02.exe p03.exe p04.exe tictactoe.exe tictactoe52.exe vector1.exe vector2.exe vector3.exe
 
 # =============================================================================
 # Built-in targets
